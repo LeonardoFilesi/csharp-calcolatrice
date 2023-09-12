@@ -11,7 +11,7 @@
             int intNum2 = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Scrivimi il primo numero decimale:");
             double decNum1 = double.Parse(Console.ReadLine());
-            Console.WriteLine("Scrivimi il secondo numero intero:");
+            Console.WriteLine("Scrivimi il secondo numero decimale:");
             double decNum2 = double.Parse(Console.ReadLine());
 
             //----------------------------SOMMA----------------------------------
