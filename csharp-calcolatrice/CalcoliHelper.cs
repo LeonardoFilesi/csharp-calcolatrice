@@ -8,6 +8,7 @@ namespace csharp_calcolatrice
 {
     internal class CalcoliHelper
     {
+        //-------------------------SOMMA--------------------------
         public static int Calculate2NumSum(int intNum1, int intNum2)
         {
             return intNum1 + intNum2;
@@ -16,6 +17,7 @@ namespace csharp_calcolatrice
         {
             return decNum1 + decNum2;
         }
+        //-------------------------DIFFERENZA--------------------------
         public static int Calculate2NumDif(int intNum1, int intNum2) 
         {
             return intNum1 - intNum2;
@@ -24,6 +26,7 @@ namespace csharp_calcolatrice
         {
             return decNum1 - decNum2;
         }
+        //-------------------------MOLTIPLICAZIONE--------------------------
         public static int Calculate2NumMoltipl(int intNum1, int intNum2)
         {
             return intNum1 * intNum2;
@@ -32,6 +35,7 @@ namespace csharp_calcolatrice
         {
             return decNum1 * decNum2;
         }
+        //-------------------------MINIMO-------------------------
         public static int CalculateMinBetween2Num(int intNum1, int intNum2)
         {
             if (intNum1 < intNum2)
@@ -52,6 +56,7 @@ namespace csharp_calcolatrice
                 return decNum2;
             }
         }
+        //-------------------------MASSIMO-------------------------
         public static int CalculateMaxBetween2Num(int intNum1, int intNum2)
         {
             if (intNum1 < intNum2)
@@ -72,7 +77,20 @@ namespace csharp_calcolatrice
                 return decNum1;
             }
         }
+        //-------------------------------------SOVRACCARICO------------------------------------
+
+        //---------------------------------BONUS--------------------------------
+        public static int  CalculateExponential(int intNum1, int intNum2)
+        {
+            if (intNum1 != 0 && intNum2 != 0) 
+            {
+                return (int)Math.Pow(intNum1, intNum2);
+            }
+            else 
+            {
+                return 1;
+            }
+        }
     }
 
-    //-------------------------------------SOVRACCARICO------------------------------
 }
