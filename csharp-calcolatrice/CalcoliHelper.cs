@@ -35,6 +35,32 @@ namespace csharp_calcolatrice
         {
             return decNum1 * decNum2;
         }
+        //-------------------------VALORE ASSOLUTO-------------------------------
+        public static int CalculateAbsoluteIntNum(int intNum1)
+        {
+            if (intNum1 > 0)
+            {
+                return intNum1;
+            } 
+            else if (intNum1 < 0) 
+            {
+                return intNum1 * -1;
+            }
+            else { return 0; }
+        }
+
+        public static double CalculateAbsoluteDecNum(double decNum1)
+        {
+            if (decNum1 > 0)
+            {
+                return decNum1;
+            }
+            else if (decNum1 < 0)
+            {
+                return decNum1 * -1;
+            }
+            else { return 0; }
+        }
         //-------------------------MINIMO-------------------------
         public static int CalculateMinBetween2Num(int intNum1, int intNum2)
         {
